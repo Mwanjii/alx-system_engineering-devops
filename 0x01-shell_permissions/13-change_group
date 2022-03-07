@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 chgrp holberton hello
+=======
+chgrp school hello
+>>>>>>> 2b831c96a226c3c7083c32da138177352a2fcef0
