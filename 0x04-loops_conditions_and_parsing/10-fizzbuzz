@@ -1,18 +1,14 @@
 #!/usr/bin/env bash
-#Program that prints sequences
+# FizzBuzz
 
-for i in {1..100}
+for ((n = 1; n <= 100; ++n))
 do
-    if ((i % 5 == 0 && i & 3 == 0))
+    if ((n % 3 && n % 5))
     then
-	echo "FizzBuzz"
-    elif ((i % 5 == 0))
-    then
-	echo "Buzz"
-    elif ((i % 3 == 0))
-    then
-	echo "Fizz"
+        echo $n
     else
-	echo "$i"
+        (( n % 3 )) || echo -n "Fizz"
+        (( n % 5 )) || echo -n "Buzz"
+        echo
     fi
 done

@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-#Bash script that displays Best School 10 times using a until condition
+# Display "Best School" 10 times
 
 i=0
-
-until [ $i -gt 9 ]
+until ((i++ == 10))
 do
-  echo "Best School"
-  ((i++))
+	echo "Best School"
 done
